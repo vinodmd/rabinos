@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+	hr{
+	color:white;
+	margin:auto;
+	width:90%;
+	}
+	.navbar{
+	  display:flex;
+      position: fixed;
+	  top: 0;
+  	  right: 0;
+      font-size: 1rem;
+	  height: 3.5rem;
+	  width:100%;
+	  background-color:black;
+	  z-index: 2;
+	
+	}
+	.navbar .text:hover{
+	color:green;
+	}
+	.box{
+		display:inline;
+        background-color:black;
+		color:white;
+		width:11%;
+		float:right;
+		font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+		
+		position:relative;
+		
+		margin:auto;
+		background-color:black;
+		
+	}
+	.main{
+	background-image: url("images/office.jpg");
+	background-color: #0eb358;
+	width:100%;
+	}
+	.textcontent{
+		padding-top:20%;
+		padding-left:50%;
+		color:white;
+		padding-bottom:10%;
+	}
+	#request
+	{
+	padding:20px 50px;
+	background-color:blue;
+	border:2px solid blue;
+	border-radius:50px;
+	}
+	#request:hover{
+	background-color:Transparent;
+	}
+	.list-style-three{list-style-type:none; padding-left:10px;font-size:20px;}
+	.greentick{color:green}
+	.videocontent{
+	background-color:#f1f1f1;
+	margin:auto;
+	width:100%;
+	float:left;
+	font-size:15px;
+	padding-left:0px;
+	
+	}
+	.inner-column{
+	position:absolute;
+	width:50%;
+	float:left;
+	clear:right;
+	
+	}
+	.videon{
+	position:relative;
+	margin:auto;
+	float:rigth;
+	clear:left;
+	width:40px;
+	padding:50px;
+	padding-left:200px;
+	}
+	.content2{
+	background-color:rgba(31,34,40,0.85);
+	margin:auto;
+	width:100%;
+	float:left;
+	font-size:15px;
+	padding-left:0px;
+	position: relative;
+	background-image: url("images/office.jpg");
+	background-blend-mode:darken;
+	}
+	.refrences li{
+		width:100%;
+		list-style-type: none;
+		display: inline;
+		font-family: 'Open Sans', sans-serif;	font-size: 21px;
+		line-height: 4px;
+		color:white;
+		padding:30px;
+	}
+	.refrences li:hover{
+		padding-bottom:10px ;
+		border-bottom: 3px solid #08ae8d;
+		color: #08ae8d;
+
+	}
+	.images .image{
+		position:relative;
+		width:22%;
+		height:50%;
+		display: inline-block;
+		padding: 15px;
+		padding-bottom: 10%;
+	}
+	@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+	.blackbox .box{
+		display:inline;
+        background-color:black;
+		color:white;
+		width:11%;
+		float:left;
+		font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+		 padding-bottom:20px;
+		position:relative;
+		padding-left:20px;
+		width:50%;}
+		
+	.content3
+	{
+	margin:auto;
+	float:left;
+	width:100%;
+	padding-top:20px;
+	
+
+	}
+	.content3 .text
+	{
+	width:60%;
+	position:relative;
+	float:left;
+	margin:auto;
+	padding-left:50px;
+	display:inline-block;
+	}
+	.content4{
+	margin:auto;
+	float:left;
+	width:100%;
+	postion:absolute;
+	padding:6px;
+	}
+	.content4 .content4box
+	{
+	border:2px solid #d3dbd5;
+	display:inline-block;
+	position:relative;
+	padding-top:30px;
+	padding-right:10px;
+	padding-left:20px;
+	width:22%;
+	height:50%;
+	margin:auto;
+	padding-bottom:100px;
+	}
+	.content4date
+	{
+	position:static;
+    color: #797979;
+    font-size: 18px;
+    font-weight: 600;
+	padding-top:30px;
+	}
+   .content4text1
+	{
+    color: #242424;
+    font-size: 18px;
+	padding-bottom:30px;
+    
+	}
+	.content4text2{
+	   position: relative;
+    color: #797979;
+    font-size: 16px;
+	}
+	.map{
+	width:100%;
+	margin:auto;
+	padding-left:5px;
+	padding-top:50px;
+	float:left;
+
+	}
+	.lastcontent{
+	width:100%;
+	margin:auto;
+	float:left;
+	
+	}
+	.footer{
+	margin:auto;
+	width:100%;
+	}
+	.lastcontent{
+	position:relative;
+	margin:auto;
+	width:100%;
+	background-color:black;
+	}
+	.bluebox{
+	width:80%;
+	top: -70px;
+	background-color:blue;
+	margin:auto;
+	z-index:1;
+	position:relative;
+	}
+	.bluebox .innerbox{
+	width: 30%;
+    background-color: blue;
+    position: relative;
+    float: left;
+    text-align: center; 
+    padding-top: 20px;
+    padding-bottom: 10px;}
+	
+	.foortercontent{
+	width:100%;
+	margin:auto;
+	margin-top:100px;
+	color:white;
+	height:500px;
+	position:relative;
+	padding-left:47px;
+	
+	}
+	.foortercontent div{
+	width:23%;
+	float:left;
+	display:inline;
+	line-height: 2.2;
+	margin:auto;
+	
+	}
+	
+</style>
+	
+	
+</head>
+<body>
+  <header class="main-header header-style-twelve fixed-header">
+  <div class="main">
+	
+	<div class="navbar">
+		<div class="image box">
+			<img   style="height:30px; width:150px;padding-right:5px;padding-bottom:0px;" src="images/logo.png"  style="width:200px;height:100%;">
+		</div>
+		<div class="home box text">
+			<span style="padding-left:60px;">Home</span>
+		</div>
+		<div class="about box text">
+			<span>About us</span>
+		</div>
+		<div class="services box text">
+			<span>Services</span>
+		</div>
+		<div class="cases box text">
+			<span>Cases</span>
+		</div>
+		<div class="pages box text">
+			<span>Pages</span>
+		</div>
+		<div class="blog box text">
+			<span>Blog</span>
+		</div>
+		<div class="contact box text">
+				<span>Contact</span>
+		</div>
+	</div>
+	<div class="textcontent">
+	<h1> We’re professional <br> for grow your</h1>
+	<p> As you know, web design encompasses many different skills and disciplines <br> production and maintenance  of websites in our days.</p>
+	</br>
+	<span id="request"> Request a call back</span>
+	
+	</div>
+	
+</div>
+</header>
+<div class="videocontent">
+     <div class="inner-column" style="padding-left:100px;padding-top:100px;">
+             <h2>We are available for grow <br> your <span>business</span></h2>
+             <div class="text">Bring to the table win-win survival strategies to ensure </br>proactive domination.
+			  At the end of the day, going forward, a new normal that has </br>evolved from generation X is on the runway heading towards.</br>
+			  </div>
+			 <ul class="list-style-three">
+                   <li> <span class="greentick">&#10004;</span> Annual &amp; Monthly Report</li>
+					<li><span class="greentick">&#10004;</span> Exclusive Support for permium member</li>
+					<li><span class="greentick">&#10004;</span> Discounts &amp; Updates</li>
+					<li><span class="greentick">&#10004;</span> Create a Score Board for Growth</li>
+			</ul>
+	</div>
+	<div class="videon">
+	
+		<video width="400" height="400" controls>
+		<source src="images/video.mp4" type="video/mp4">
+		Your browser does not support HTML video.
+		</video>
+	</div>
+</div>
+<div class="content2">
+	<h1 style="font-size:45px;padding-left:64px;padding-top: 60px; color:#f1f1f1">our cases</h1>
+	<div class="refrences">
+		<ul>
+			<li>all</li>
+			<li>Invesment</li>
+			<li>Bussiness</li>
+			<li>Finance</li>
+			<li>Funds</li>
+			<li>Insurence</li>
+		</ul>
+	</div>
+	<div class="images">
+		<img class="image" src="http://wp3.commonsupport.com/newwp/rabinose/wp-content/uploads/2018/07/4.jpg"" alt="not found">
+		<img class="image" src="http://wp3.commonsupport.com/newwp/rabinose/wp-content/uploads/2018/07/1-1.jpg" alt="not found">
+		<img class="image" src="http://wp3.commonsupport.com/newwp/rabinose/wp-content/uploads/2018/07/2.jpg" alt="not found">
+		<img class="image" src="http://wp3.commonsupport.com/newwp/rabinose/wp-content/uploads/2018/07/3.jpg" alt="not found">
+	</div>
+</div>
+
+
+<div class="content3">
+	<div class="text">
+		<h1>Company overview</h1>
+		<p>Capitalize on low hanging fruit to identify a ballpark value added </br>activity to beta test.</p>
+		<p>Leverage agile frameworks to provide a robust synopsis for high level overviews.</br>
+		Iterative approaches to corporate strategy foster collaborative thinking to further</br>
+		the overall value proposition. Organically grow the holistic world view of disruptive </br>
+		innovation via workplace diversity and empowerment. Bring to the table win-win </br>
+		survival strategies to ensure proactive domination. Organically grow the holistic </br>
+		world view of disruptive innovation via workplace.</p>
+	</div>
+	<div class="blackbox" style="padding-left:4%;">
+		<div class="box">
+		<span style="padding-left:10%;;font-size:60px">98+</span>
+		
+		<span style="padding-left:10%;;font-size:60px">8+</span>
+		
+		<span style="padding-left:20%;font-size:60px">100%</span>
+		</br>
+		<span style="padding-left:10%;font-size:20px">Happy Customer</span>
+		<span style="padding-left:20px;font-size:20px">year of Experience</span>
+		<span style="padding-left:55px;font-size:20px">Satisfaction</span>
+		
+	</div>
+	<div class="img">
+		<img src="images/girl.jpg" alt="image not found">
+	</div>
+	
+</div>
+</div>
+
+<div class="content4">
+	<h1 style="padding-left:5%;">News & Updates</h1>
+	<div class="content4box">
+	<span class="content4date" >05 July 2018</span></br>
+	<span class="content4text1">Podcasting operational change management inside.</span></br>
+	<span class="content4text2">PodcastingLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...</span></br>
+	
+	</div>
+	<div class="content4box">
+	<span class="content4date">05 July 2018</span></br>
+	<span class="content4text1">Podcasting operational change management inside.</span></br>
+	<span class="content4text2">PodcastingLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...</span></br>
+	
+	</div>
+	<div class="content4box">
+	<span class="content4date">07 July 2018</span></br>
+	<span class="content4text1">Podcasting operational change management inside.</span></br>
+	<span class="content4text2">PodcastingLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...</span></br>
+	
+	</div>
+	<div class="content4box">
+	<span class="content4date">07 July 2018</span></br>
+	<span class="content4text1">Podcasting operational change management inside.</span></br>
+	<span class="content4text2">PodcastingLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...</span></br>
+	</div>
+</div>
+<div class ="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15552.785674763894!2d77.66505484999999!3d12.95927975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1354a9e12d89%3A0xe773113469498e26!2sHAL%20Airport!5e0!3m2!1sen!2sin!4v1647500856689!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<footer>
+	<div class="lastcontent">
+		<div class="bluebox">
+			<div class="innerbox">
+					<div class="innerimage">
+						<img width="50" height="50" src="images/location.png" alt="image not found">
+					</div>
+						<div class="innertext">
+						<p>54B, Tailstoi Town 5238 MT,</br>La city, IA 522364</p>
+					</div>
+			</div>
+			<div class="innerbox">
+					<div class="innerimage">
+						<img   width="50" height="50"src="images/mail.png" alt="image not found">
+					</div>
+						<div class="innertext">
+						<p>Email us :</br>
+contact.rabinos@gmail.com</p>
+					</div>
+			
+			</div>
+			<div class="innerbox">
+					<div class="innerimage">
+					<img  width="50" height="50" src="images/call.png" alt="image not found">
+					</div>
+						<div class="innertext">
+						<p>Call us on :</br>
++ 1800 456 7890</p>
+					
+					</div>
+			</div>
+		</div>
+		<div class="foortercontent">
+			
+			<div class="foorterbox" style="padding-rigth:30px;">
+			<img style="padding-top:20px;" height="75"src="http://wp3.commonsupport.com/newwp/rabinose/wp-content/uploads/2018/11/logo-5.png">
+			<p>Capitalize on low hanging fruit to</br> identify a ballpark value added activity </br>to beta test. Override the digital divide</br> additional clickthroughs.</br></p>
+			<a href="#" class="read-more">Read more ...</a>
+			
+			</div>
+			<div class="foorterbox2">
+			</br>
+			<span style="color:#b2b5ad; font-size:30px;padding-top:50px;">Useful Links</span>
+<p>Home</br>
+About Us</br>
+Request Call Back</br>
+Testimonials</br>
+Contact Us</br></p>
+			
+			</div>
+			<div  class="foorterbox"></br>
+			<span style="color:#b2b5ad; font-size:30px;padding-top:50px;">Services</span>
+<p>Business Consulting</br>
+Audit & Accounting</br>
+Tax Planning</br>
+Accumulation</p>
+			
+			</div>
+			<div class="foorterbox"></br>
+			<span style="color:#b2b5ad; font-size:30px;padding-top:50px;">NewsLetter</span>
+<p>Get latest updates and offers.</p>
+
+			
+			</div>
+		
+			
+		</div>
+			<hr>
+		<p style="color:white;padding-left:80px;">© Copyright Rabinos Consulting Firm 2018. All right reserved.</p>
+	</div>
+</footer>
+</body>
+
+</html>
